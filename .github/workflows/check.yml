@@ -1,0 +1,14 @@
+name: test Pipeline
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  - name: Say hello
+    run: echo "Hello from GitHub Actions"
+
+  - name: Show date
+    run: date
