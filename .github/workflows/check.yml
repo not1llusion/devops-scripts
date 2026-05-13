@@ -23,3 +23,6 @@ jobs:
 
       - name: Show date
         run: date
+
+      - name: secret check
+        run: echo $MY_SECRET
