@@ -7,8 +7,12 @@ on:
     branches: [master]
 
 jobs:
-  - name: Say hello
-    run: echo "Hello from GitHub Actions"
+  build:
+    runs-on: ubuntu-latest
 
-  - name: Show date
-    run: date
+    steps:
+      - name: Say hello
+      run: echo "Hello from GitHub Actions"
+
+      - name: Show date
+      run: date
